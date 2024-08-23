@@ -1,7 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Memories - A Digital Tribute to Belizean Legacies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="index_files/logo.png" alt="Living Memories Logo">
+            </div>
+            <div class="business-info">
+                <h1>Living Memories</h1>
+                <p>A Digital Tribute to Belizean Legacies</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landing-page">
+            <div class="qr-code">
+                <img src="qr-code.png" alt="QR Code to Access Tribute">
+            </div>
+            <div class="tribute-content">
+                <h1>In Loving Memory of [Deceased's Name]</h1>
+                <p>Date of Birth: [DOB] - Date of Passing: [DOD]</p>
+                <p>[Brief biographical information about the deceased]</p>
+                <a href="#photo-albums" class="button">View Photo Albums</a>
+                <a href="#videos" class="button">Watch Videos</a>
+                <a href="#letters-quotes" class="button">Read Letters & Quotes</a>
+            </div>
+        </section>
+
+        <section id="photo-albums" class="media-section">
+            <h2>Photo Albums</h2>
+            <div class="album">
+                <img src="album1.jpg" alt="Album 1">
+                <p>Public Album</p>
+            </div>
+            <div class="album">
+                <img src="album2.jpg" alt="Album 2">
+                <p>Private Album</p>
+            </div>
+        </section>
+
+        <section id="videos" class="media-section">
+            <h2>Videos</h2>
+            <div class="video">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Memories of [Deceased's Name]</p>
+            </div>
+        </section>
+
+        <section id="letters-quotes" class="tribute-section">
+            <h2>Letters & Quotes</h2>
+            <div class="letter">
+                <p>"[Quote or personal message]"</p>
+                <p><strong>- [Visitor's Name]</strong></p>
+            </div>
+            <div class="letter-form">
+                <h3>Leave a Tribute</h3>
+                <form>
+                    <textarea placeholder="Your message here..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#services">Explore Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
