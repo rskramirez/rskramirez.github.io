@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Living Memories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="index_files/logo.png" alt="Living Memories Logo">
+            </div>
+            <div class="business-info">
+                <h1>Living Memories</h1>
+                <p>A Digital Tribute to Belizean Legacies</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-page">
+            <h1>Our Services</h1>
+            <p>At Living Memories, we offer a range of services designed to celebrate and honor the legacies of loved ones. Our goal is to create a meaningful and lasting tribute that reflects the unique essence of each individual.</p>
+
+            <div class="service">
+                <h2>Personalized Tributes</h2>
+                <p>We create custom digital tributes, including photo albums, video montages, and personal messages, to commemorate the life of the deceased.</p>
+            </div>
+
+            <div class="service">
+                <h2>Memorial Webpages</h2>
+                <p>Design and development of personalized memorial webpages where family and friends can share memories, stories, and photos.</p>
+            </div>
+
+            <div class="service">
+                <h2>Event Coordination</h2>
+                <p>Assistance with organizing memorial events, including virtual gatherings and live-streamed services, to bring people together to celebrate life.</p>
+            </div>
+
+            <div class="service">
+                <h2>Consultation Services</h2>
+                <p>Provide expert advice and support to help families create the perfect tribute and navigate through the planning process.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="services.html">Explore Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Services page loaded');
+            
+            // Example of handling clicks on service items
+            document.querySelectorAll('.service').forEach(service => {
+                service.addEventListener('click', function() {
+                    console.log(`Service clicked: ${this.querySelector('h2').textContent}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

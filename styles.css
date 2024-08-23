@@ -1,4 +1,4 @@
-/* Global Styles */
+ /* Global Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -142,6 +142,54 @@ main {
 .album p, .video p {
     margin-top: 0.5rem;
     color: #4e577b; /* muted blue */
+	/* Photo Albums Section Styling */
+.media-section {
+    padding: 20px;
+}
+
+.album {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.album img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.album p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Grid layout for photo albums */
+.photo-album-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-album-grid .album {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width to fit 3 items per row */
+    box-sizing: border-box;
+}
+
+/* Ensure the grid is responsive */
+@media (max-width: 768px) {
+    .photo-album-grid .album {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-album-grid .album {
+        flex: 1 1 100%; /* 1 item per row on very small screens */
+    }
+}
+
 }
 
 /* Tribute Section */

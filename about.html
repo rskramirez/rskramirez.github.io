@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Living Memories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="index_files/logo.png" alt="Living Memories Logo">
+            </div>
+            <div class="business-info">
+                <h1>Living Memories</h1>
+                <p>A Digital Tribute to Belizean Legacies</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to Living Memories, where we celebrate and honor the legacies of cherished individuals from Belize and beyond. Our mission is to provide a digital platform where loved ones can create and share tributes that preserve memories and tell stories.</p>
+
+            <h3>Our Mission</h3>
+            <p>At Living Memories, our goal is to offer a respectful and heartfelt space for families and friends to commemorate their loved ones. We believe in the power of memories and strive to create a space that helps people remember and celebrate those who have touched their lives.</p>
+
+            <h3>Our Story</h3>
+            <p>Founded with a passion for preserving legacies, Living Memories started as a small project with a big vision. Our team is dedicated to making it easier for people to connect, share, and remember the special moments that define our lives. With a combination of technology and empathy, we aim to support families during their most challenging times.</p>
+
+            <h3>Contact Us</h3>
+            <p>If you have any questions or would like to learn more about our services, please don’t hesitate to reach out. We are here to help and support you in any way we can.</p>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('About Us page loaded');
+            
+            // Example of smooth scrolling (this is handled by the CSS above, but this is how you might do it with JavaScript)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Living Memories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #3A415C;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #4e577b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="index_files/logo.png" alt="Living Memories Logo">
+            </div>
+            <div class="business-info">
+                <h1>Living Memories</h1>
+                <p>A Digital Tribute to Belizean Legacies</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Page Section -->
+        <section class="contact-page">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need further assistance, please feel free to reach out to us. We are here to help you create a meaningful tribute.</p>
+
+            <div class="contact-info">
+                <h2>Our Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:info@livingmemories.com">info@livingmemories.com</a></p>
+                <p><strong>Phone:</strong> (501) 607-8018</p>
+                <p><strong>Address:</strong> 123 Memory Avenue, Concepcion Village, Corozal Town, Belize C.A.</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="services.html">Explore Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Contact page loaded');
+
+            // Handle form submission
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function(event) {
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !message) {
+                    alert('Please fill out all fields before submitting.');
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+        });
+    </script>
+</body>
+</html>
